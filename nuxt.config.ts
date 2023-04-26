@@ -4,11 +4,9 @@ export default defineNuxtConfig({
     imports: {
         autoImport: true
     },
-
     typescript: {
         strict: true
     },
-
     css: [
         // vuetify sass
         'vuetify/lib/styles/main.sass',
@@ -22,5 +20,12 @@ export default defineNuxtConfig({
         define: {
             'process.env.DEBUG': false,
         },
+        build: {
+            rollupOptions: {
+                external: [
+                    /^node:.*/,
+                ]
+            }
+        }
     },
 })

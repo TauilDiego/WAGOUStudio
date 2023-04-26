@@ -1,7 +1,7 @@
 <template>
   <section style="width: 100%; height: auto; min-height: 100vh">
     <div style="position:absolute; width: 100%; height: 100%; object-fit: cover; top: 0; right: auto; bottom: auto; left: 0;">
-      <video autoplay loop muted class="back-video" src="webm-for-site_1920x1080.webm" type="video/mp4" playsinline></video>
+      <video autoplay loop muted class="back-video" src="/webm-for-site_1920x1080.webm" type="video/mp4" playsinline></video>
     </div>
   </section>
   <section style="width: 100%; height: auto; min-height: 650px">
@@ -31,7 +31,6 @@ let carrouselModel = ref(0)
 function changeCycle() {
   cycle.value = !cycle.value
 }
-
 
 definePageMeta({
   layout: "default"
