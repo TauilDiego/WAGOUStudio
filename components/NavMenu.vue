@@ -2,7 +2,7 @@
   <v-col sm="7" md="6" lg="5" xl="3" class="nuxt-link-navigation">
     <nuxt-link class="link-navigation" to="/reel">Reel</nuxt-link>
     <nuxt-link class="link-navigation" to="/projects">Projects</nuxt-link>
-    <nuxt-link class="link-navigation" to="/originals">Originals</nuxt-link>
+    <nuxt-link class="link-navigation" to="/contact">Contact</nuxt-link>
     <nuxt-link class="link-navigation" to="/about">About</nuxt-link>
     <nuxt-link class="hireus-link-navigation" to="/team/2">Free Courses</nuxt-link>
   </v-col>

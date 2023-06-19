@@ -7,7 +7,7 @@
       :height="screenPositionHeight"
       :class="screenPosition"
     >
-      <v-container fluid style="height: 146px">
+      <v-container fluid style="height: 146px" class="pt-0">
         <v-row no-gutters>
           <v-col>
             <nuxt-link class="wagou-link" to="/">
@@ -38,13 +38,13 @@
     </v-app-bar>
 
     <v-main v-scroll class="pt-0">
-      <!--            <client-only>-->
-      <!--                <v-spacer v-if="$isMobile && !hamburguerStatus" style="height: 50px"/>-->
-      <!--            </client-only>-->
+      <client-only>
+          <v-spacer v-if="!hamburguerStatus" style="height: 60px"/>
+      </client-only>
       <NuxtPage/>
     </v-main>
 
-    <v-footer absolute app>
+    <v-footer>
       <v-container>
         <!--        <v-row no-gutters>-->
         <!--          <v-spacer/>-->
@@ -90,7 +90,7 @@ const screenPositionHeight = computed(() => {
     return '150'
 
   if (screenPosition.value === 'main')
-    return '50'
+    return '60'
 })
 
 function verifyScreenPositionByRoute(): void {

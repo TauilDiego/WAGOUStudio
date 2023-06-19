@@ -1,6 +1,7 @@
 <template>
-  <div>
-    
+  <div class="text-center">
+
+    <img width="400" src="wagou_logo.svg">
   </div>
 </template>
 

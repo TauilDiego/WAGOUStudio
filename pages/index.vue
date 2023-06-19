@@ -8,7 +8,7 @@
     <v-carousel
         height="650"
         :show-arrows="false"
-        interval="1000"
+        interval="3000"
         :cycle="true"
         v-model="carrouselModel"
     >
